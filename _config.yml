@@ -1,0 +1,5 @@
+title: BLDRCODE Lab
+description: Coding tutoring and mentorship for beginners and pros.
+theme: minimal   # choose a simple base theme
+plugins:
+  - jekyll-feed
