@@ -1,26 +1,101 @@
-/* Custom Primary Color */
+/* Brand Colors */
 :root {
-  --color-accent: #adb564;
+  --primary-color: #adb564;
+  --background-color: #f5f5f5;
+  --text-color: #222;
+  --card-bg: #fff;
 }
 
-/* Override links and buttons */
-a, .btn {
-  color: #fff !important;
-  background-color: #adb564 !important;
-  border-color: #adb564 !important;
+/* Global Body */
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  margin: 0;
 }
 
-a:hover, .btn:hover {
-  opacity: 0.85;
-  transform: translateY(-1px);
+/* Header */
+header.Header {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.Header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.Header-nav a {
+  color: #fff;
+  font-weight: bold;
+  margin-left: 1rem;
+}
+
+.Header-nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 6rem 2rem;
+  background: linear-gradient(135deg, #f5f5f5, #ffffff);
+}
+
+.hero h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.hero .btn {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 0.75rem 2rem;
+  font-weight: bold;
+  border-radius: 6px;
+  text-decoration: none;
   transition: all 0.2s ease;
 }
 
-/* Card-like sections for courses */
+.hero .btn:hover {
+  opacity: 0.85;
+  transform: translateY(-2px);
+}
+
+/* Course / Feature Cards */
 .course-card {
-  background-color: #fff;
-  border-radius: 10px;
+  background-color: var(--card-bg);
+  border-radius: 12px;
   padding: 2rem;
   margin-bottom: 2rem;
   box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.course-card h3 {
+  margin-top: 0;
+}
+
+.course-card .btn {
+  margin-top: 1rem;
+  display: inline-block;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: #eee;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+  .hero h2 { font-size: 2.25rem; }
+  .Header h1 { font-size: 2rem; }
 }
