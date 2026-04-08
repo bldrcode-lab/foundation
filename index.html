@@ -1,42 +1,60 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BLDRCODE Lab</title>
-  <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
+---
+layout: default
+title: BLDRCODE Lab
+---
 
-  <header>
-    BLDRCODE Lab
-    <nav>
+<header class="Header py-4">
+  <div class="container">
+    <h1>BLDRCODE Lab</h1>
+    <nav class="Header-nav">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="courses.html">Courses</a>
       <a href="contact.html">Contact</a>
     </nav>
-  </header>
+  </div>
+</header>
 
-  <section>
+<main class="container py-5">
+  <!-- Hero Section -->
+  <section class="mb-5">
     <h2>Learn to Code the Modern Way</h2>
     <p>BLDRCODE Lab offers personalized coding tutoring for beginners and professionals. Build real projects, master modern technologies, and accelerate your career.</p>
-    <button class="button">Book a Session</button>
+    <a class="btn" href="contact.html">Book a Session</a>
   </section>
 
-  <section class="card">
-    <h3>Why Choose BLDRCODE Lab?</h3>
-    <ul>
-      <li>Hands-on coding projects</li>
-      <li>Expert tutors with industry experience</li>
-      <li>Flexible learning schedule</li>
-      <li>Modern development tools and workflows</li>
-    </ul>
+  <!-- Features / Why Choose Us -->
+  <section class="row">
+    <div class="col-12 col-md-6 mb-4">
+      <div class="course-card">
+        <h3>Hands-on Projects</h3>
+        <p>Learn by building real projects that demonstrate your skills to employers.</p>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 mb-4">
+      <div class="course-card">
+        <h3>Expert Tutors</h3>
+        <p>Industry professionals with years of experience guiding you step by step.</p>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 mb-4">
+      <div class="course-card">
+        <h3>Flexible Schedule</h3>
+        <p>Learn at your own pace with sessions tailored to your availability.</p>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 mb-4">
+      <div class="course-card">
+        <h3>Modern Tools & Workflows</h3>
+        <p>We teach the latest development tools, best practices, and workflow techniques.</p>
+      </div>
+    </div>
   </section>
+</main>
 
-  <footer>
-    &copy; 2026 BLDRCODE Lab. All rights reserved.
-  </footer>
-
-</body>
-</html>
+<footer class="container py-4">
+  &copy; 2026 BLDRCODE Lab. All rights reserved.
+</footer>
