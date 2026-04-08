@@ -1,86 +1,26 @@
-/* Root Colors */
+/* Custom Primary Color */
 :root {
-  --primary-color: #adb564;
-  --background-color: #f9f9f9;
-  --text-color: #222222;
-  --header-color: #111111;
-  --link-color: #adb564;
-  --card-bg: #ffffff;
+  --color-accent: #adb564;
 }
 
-/* Body */
-body {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  background-color: var(--background-color);
-  color: var(--text-color);
-  line-height: 1.6;
+/* Override links and buttons */
+a, .btn {
+  color: #fff !important;
+  background-color: #adb564 !important;
+  border-color: #adb564 !important;
 }
 
-/* Header override */
-header {
-  background-color: var(--primary-color);
-  color: #fff;
-  padding: 2rem 1rem;
-  text-align: center;
-  font-size: 2.5rem;
-  font-weight: bold;
-}
-
-/* Navigation */
-nav a {
-  color: #fff;
-  font-weight: bold;
-  margin: 0 1rem;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
-/* Buttons */
-.button {
-  background-color: var(--primary-color);
-  color: #fff;
-  padding: 0.75rem 1.5rem;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  font-weight: bold;
+a:hover, .btn:hover {
+  opacity: 0.85;
+  transform: translateY(-1px);
   transition: all 0.2s ease;
 }
 
-.button:hover {
-  opacity: 0.85;
-  transform: translateY(-2px);
-}
-
-/* Card */
-.card {
-  background-color: var(--card-bg);
-  border-radius: 12px;
+/* Card-like sections for courses */
+.course-card {
+  background-color: #fff;
+  border-radius: 10px;
   padding: 2rem;
-  margin: 1.5rem 0;
+  margin-bottom: 2rem;
   box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-}
-
-/* Sections */
-section {
-  max-width: 900px;
-  margin: auto;
-  padding: 4rem 1rem;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 2rem 1rem;
-  color: #666;
-  font-size: 0.9rem;
-  background-color: #f1f1f1;
-}
-
-/* Responsive */
-@media(max-width: 600px) {
-  header { font-size: 2rem; }
-  nav { display: flex; flex-direction: column; gap: 1rem; }
 }
