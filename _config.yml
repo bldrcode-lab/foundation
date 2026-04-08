@@ -1,5 +1,5 @@
 title: BLDRCODE Lab
-description: Coding tutoring and mentorship for beginners and pros.
-theme: minimal   # choose a simple base theme
+description: Coding tutoring for beginners and professionals
+theme: jekyll-theme-cayman   # ✅ supported theme
 plugins:
   - jekyll-feed
